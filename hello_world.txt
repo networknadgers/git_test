@@ -1,1 +1,1 @@
-This is a test to ensure that the text file gets committed to the repo
+Test of hello world to new repo
