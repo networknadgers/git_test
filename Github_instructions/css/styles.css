@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Add padding to create space around the content */
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px; /* Reduce margin-top for h2 */
+}
+
+ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 20px; /* Add margin-left for ul */
+}
+
+p {
+    margin-left: 20px;
+}

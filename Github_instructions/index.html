@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Instructions for Github in a Nutshell</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <header>
+        <h1>How to work Github in a nutshell: The Basics</h1>
+    </header><br><br><br>
+
+    <body>
+        <h2>Instructions for Repositories:</h2><br>
+        <h3>On Github (The network) for forked repos not owned by you</h3>
+        <ol>
+            <li>Fork the repository</li>
+            <li>Clone the repository <strong><em>git clone "ssh of repository"</em></strong></li>
+            <li>Add your contributions (your code or documentation)</li>
+            <li>Use <strong><em>git status</em></strong> to check the status of the modifications (should be in red)</li>
+            <li>Before adding the changes to the staging area, you can check  the changes you made and what is different with <strong><em>git diff</em></strong></li>
+            <li>Push your changes from "modified" area to "staged" area using <strong><em>git add .</em></strong> 
+                <br>
+                <ul>
+                                                                                                                                                 <!-- label as <filename1> and <filename2> etc... after the "git add"-->
+                    <li>The . at the end of the <strong><em>add</em></strong> is used to submit "all" changes. If you want specific changes do <strong><em>git add filename1 filename2 etc..</em></strong></li>
+                </ul>
+            </li>
+            <li>Check status (<strong><em>git status</em></strong>) of your changes to ensure it went from 'red' to 'green' indicating it is in the "staged" area</li>
+            <li>If you're happy with your changes then commit them using <strong><em>git commit -m "Comment about the recent edit and what you changed"</em></strong>
+                <ul>
+                                                                                                                                                                <!-- Automatically stages them and commits them in one go -->
+                    <li>You can also commit without adding <strong><em>(git add .)</em></strong> every single time by committing and adding in one command: <strong><em>git commit -a -m "Edited changes message here"</em></strong></li>
+                    <li>If you don't add the "-m" flag with the quotations of the edit, the terminal can set it up to where VSCode automatically creates a text editor to type out your changes
+                        <ul>
+                            <li>To do this use the command on your terminal: <strong><em>git config --global core.editor "code --wait"</em></strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Finally push your changes to the repo using <strong><em>git push</em></strong>
+                <ul>
+                    <li>Technically for finer details, depending on the path of the repo, you would use <strong><em>git push origin main</em></strong></li>
+                </ul>
+            </li>
+            <li>Create the pull request on Github and wait for it to be merged</li>
+        </ol><br><br>
+        <h3>On Github (The network) for local repos owned by you or you as an admin/collaborator</h3>
+        <p>Follow steps <strong><em>2-8</em></strong></p>
+    </body>
+</html>
